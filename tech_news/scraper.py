@@ -4,6 +4,9 @@ import time
 # Docs: https://docs.python-requests.org/en/master/
 import requests
 
+# Docs: https://parsel.readthedocs.io/en/latest/usage.html
+from parsel import Selector
+
 
 # Requisito 1
 def fetch(url):
@@ -21,6 +24,9 @@ def fetch(url):
 # Requisito 2
 def scrape_novidades(html_content):
     """Seu código deve vir aqui"""
+    selector = Selector(text=html_content)
+    links = selector.css("h2.entry-title a::attr(href)").getall()
+    return links
 
 
 # Requisito 3
