@@ -7,6 +7,8 @@ import requests
 # Docs: https://parsel.readthedocs.io/en/latest/usage.html
 from parsel import Selector
 
+from tech_news.database import create_news
+
 
 # Requisito 1
 def fetch(url):
@@ -69,4 +71,20 @@ def scrape_noticia(html_content):
 # Requisito 5
 def get_tech_news(amount):
     """Seu código deve vir aqui"""
+    url = fetch("https://blog.betrybe.com")
+    list = scrape_novidades(url)
+    count = 0
+    results = []
+    while len(list) < amount:
+        next = scrape_next_page_link(url)
+        url = fetch(next)
+        list.extend(scrape_novidades(url))
+
+    while count < amount:
+        article = fetch(list[count])
+        results.append(scrape_noticia(article))
+        count += 1
+
+    create_news(results)
+    return results
 
