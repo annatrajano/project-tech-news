@@ -8,24 +8,6 @@ As notícias foram obtidas através da raspagem do _Blog da Trybe_: https://blog
 
 Além disso, as  notícias foram salvas no banco de dados (MongoDB) utilizando funções em python.
 
-## Python + Flask
-
- Job Insights - Homepage       
-:-------------------------:|
-![Screeshot](./img/job_1.png)  |
-
-Job Insights - Filters       
-:-------------------------:|
-![Screeshot](./img/job_2.png)  |
-
----
-
-## Demo
-
-![Demo](img/video.gif)
-
----
-
 ## Instalação do projeto localmente:
  
 Após cada um dos passos, haverá um exemplo do comando a ser digitado para fazer o que está sendo pedido, caso tenha dificuldades e o exemplo não seja suficiente, não hesite em me contatar em _annagarcia@id.uff.br_ 
@@ -81,14 +63,11 @@ Neste projeto, desenvolvi as seguintes habilidades:
    <li>Armazenar os dados obtidos em um banco de dados (MongoDB) </li>
  </ul>
 
-
-
  
  ## Referências
- [Documentação Oficial - Python](https://docs.python.org/3/)<br>
- [Working With Files in Python](https://realpython.com/working-with-files-in-python/)<br>
- [Pytest](https://docs.pytest.org/en/7.1.x/contents.html)<br>
- [Conventional Commits](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)<br>
+ [Scraping: o que é e como fazer raspagem? [O guia completo!]](https://blog.betrybe.com/tecnologia/scraping-como-fazer/)<br>
+ [Python na Prática fazendo Web Scraping (de JavaScript dinâmico)](https://www.youtube.com/watch?v=Vxl5jUltHBo)<br>
+
 
  ## Escopo do Projeto
  
